@@ -1,0 +1,7 @@
+
+
+sequelize db:create 
+//model generation 
+sequelize model:generate --name todo_list --attributes "todo_id:integer, description:string, calendar_event_id:integer" --force true
+
+sequelize model:generate --name calendar_events --attributes "calendar_event_id:integer, description:string, todo_id:integer" --force true
