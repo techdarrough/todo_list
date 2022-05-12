@@ -14,7 +14,7 @@ app.get('/', (req, res)=>{
     })
 });
 
-//controller
+//controllers
 const toDoController = require('./controllers/toDoController')
 app.use ('/todos', toDoController)
 
