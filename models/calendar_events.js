@@ -26,9 +26,17 @@ module.exports = (sequelize, DataTypes) => {
     },
     todo_id: {
       type:DataTypes.INTEGER,
-      allowNull: false
-
-    
+      allowNull: false    
+    },
+    todo_name: {
+      type:DataTypes.STRING,
+      allowNull:false,
+      
+    },
+    todo_complete:{
+      type:DataTypes.BOOLEAN,
+      defaultValue: false,
+      allowNull:false
     }
   }, {
     sequelize,

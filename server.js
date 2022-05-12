@@ -9,7 +9,7 @@ app.use(express.json()) //allows access to req.body
 app.use(express.urlencoded({ extended: false })) // parsing data sent to server via put or post
 
 app.get('/', (req, res)=>{
-    res.statusMessage(200).json({
+    res.status(200).json({
         message: "welcome to todolist back end setup"
     })
 });

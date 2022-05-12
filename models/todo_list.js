@@ -14,9 +14,28 @@ module.exports = (sequelize, DataTypes) => {
     }
   }
   todo_list.init({
-    todo_id: DataTypes.INTEGER,
-    description: DataTypes.STRING,
-    calendar_event_id: DataTypes.INTEGER
+    todo_id: {
+      type:DataTypes.INTEGER,
+      primaryKey:true,
+      allowNull:false
+    },
+    todo_name:{
+      type:DataTypes.STRING,
+      allowNull:false
+    },
+    description: {
+      type:DataTypes.STRING,
+      allowNull:false    
+    },
+    calendar_event_id: {
+      type:DataTypes.INTEGER,
+      allowNull: true
+        },
+    todo_complete:{
+      type:DataTypes.BOOLEAN,
+      defaultValue:false,
+      allowNull:false
+    }
   }, {
     sequelize,
     modelName: 'todo_list',

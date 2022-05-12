@@ -7,5 +7,26 @@
     "sequelize": "^6.19.0",
     "sequelize-cli": "^6.4.1",
     "urlencode": "^1.1.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "name": "todo_list",
+  "version": "1.0.0",
+  "description": "Postgres todo list",
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/techdarrough/todo_list.git"
+  },
+  "keywords": [
+    "todo"
+  ],
+  "author": "Preston Darrough",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/techdarrough/todo_list/issues"
+  },
+  "homepage": "https://github.com/techdarrough/todo_list#readme"
 }
