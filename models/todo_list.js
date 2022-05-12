@@ -39,7 +39,9 @@ module.exports = (sequelize, DataTypes) => {
   }, {
     sequelize,
     modelName: 'todo_list',
-    tableName:'todo'
+    tableName:'todo_list',
+    timestamps: false
+    
   });
   return todo_list;
 };

@@ -19,6 +19,10 @@ const toDoController = require('./controllers/toDoController')
 app.use ('/todos', toDoController)
 
 
+
+app.get('*', (req, res) => res.status(404).send({
+    message: 'Nothing to see here'}))
+
 //Listen 
 const port = process.env.PORT
 app.listen(port, (err) => {

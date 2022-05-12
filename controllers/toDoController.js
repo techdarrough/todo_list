@@ -6,16 +6,10 @@ const res = require('express/lib/response');
 
 // Find all todo items 
 
-router.get('/', async (req, res)=>{
+router.get("/", async (req, res)=>{
     try{
-        const foundTodDos = await todo_list.findAll(
-            {
-                order:[ [ 'todo_id', 'ASC' ] ],
-                where: {
-                    name: { [Op.like]: `%${req.query.name ? req.query.name : ' '}%`  }
-                }
-            }
-        )
+        const foundTodDos = await todo_list.findAll();
+        res.status(200).json(foundTodDos);
     } catch (err) {
         console.log(err)
         res.status(500).json(err)
@@ -25,16 +19,12 @@ router.get('/', async (req, res)=>{
 });
 
 // Find specific todo
-router.get('/:name', async (req, res)=> {
-    try{
-        const foundTodoItem = await todo_list.findOne({
-            where
-        })
-    } catch (err) {
-        console.log(err)
-        res.status(500).json(err)
-    }
-})
 
+
+//Create todo
+
+//Update Todo
+
+//Delete todo
 
 module.exports = router

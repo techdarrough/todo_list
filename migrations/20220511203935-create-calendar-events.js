@@ -15,6 +15,15 @@ module.exports = {
       todo_id: {
         type: Sequelize.INTEGER,
         allowNull:true
+      },
+      todo_name: {
+        type:Sequelize.STRING,
+        allowNull:false
+      },
+      todo_complete: {
+        type:Sequelize.BOOLEAN,
+        defaultValue: false,
+        allowNull:false
       }
     });
   },
