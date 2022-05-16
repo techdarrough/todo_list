@@ -8,7 +8,9 @@ const { Op } = require('sequelize');
 
 router.get("/", async (req, res)=>{
     try{
-        const foundTodDos = await todo_list.findAll();
+        const foundTodDos = await todo_list.findAll({
+            order:[['todo_id', 'ASC']]
+        });
         res.status(200).json(foundTodDos);
     } catch (err) {
         console.log(err)
@@ -68,7 +70,7 @@ router.delete('/:todo_id', async (req, res) => {
     try {
         const deletetoDo = await todo_list.destroy({
             where: {
-                todo_id: req.params.id
+                todo_id: req.params.todo_id
             }
         })
         res.status(200).json({

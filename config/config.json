@@ -1,23 +1,23 @@
 {
   "development": {
     "username": "postgres",
-    "password": null,
+    "password": "postgres",
     "database": "todo_list",
-    "host": "epimetheus",
+    "host": "localhost",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
-    "password": null,
-    "database": "music_tour_test",
-    "host": "epimetheus",
+    "password": "postgres",
+    "database": "todo_list",
+    "host": "localhost",
     "dialect": "postgres"
   },
   "production": {
     "username": "postgres",
-    "password": null,
-    "database": "database_production",
-    "host": "epimetheus",
+    "password": "postgres",
+    "database": "todo_list",
+    "host": "localhost",
     "dialect": "postgres"
   }
 }
