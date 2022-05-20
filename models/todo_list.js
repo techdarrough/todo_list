@@ -17,7 +17,9 @@ module.exports = (sequelize, DataTypes) => {
   todo_list.init({
     todo_id: {
       type:DataTypes.INTEGER,
-      primaryKey:true
+      primaryKey:true,
+      autoIncrement: true
+    
     },
     todo_name:{
       type:DataTypes.STRING,
