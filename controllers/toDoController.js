@@ -22,12 +22,12 @@ router.get("/", async (req, res)=>{
 
 // Find one
 
-router.get("/:todo_name", async (req, res) => {
+router.get("/:todo_id", async (req, res) => {
     try {
         const foundSimilarTodos = await todo_list.findOne({
             order: [ [ 'todo_id', 'ASC' ] ],
             where: {
-                todo_name: { [Op.like]: `%${req.query.todo_name ? req.query.todo_name : ''}%`  }
+                todo_id: { [Op.like]: `%${req.query.todo_id ? req.query.todo_id : ''}%`  }
             }
         })
         res.status(200).json(foundSimilarTodos)
@@ -51,11 +51,11 @@ router.post("/", async (req, res) => {
     }
 })
 //Update Todo
-router.put("/:todo_name", async (req, res) => {
+router.put("/:todo_id", async (req, res) => {
     try{
         const updateTodo = await todo_list.update(req.body, {
             where: { 
-                todo_name: req.params.todo_name
+                todo_id: req.params.todo_id
             }
         })
         res.status(200).json(`Succefully updated ${updateTodo} todos`)
