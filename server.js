@@ -12,10 +12,10 @@ app.use(express.urlencoded({ extended: false })) // parsing data sent to server 
 
 // cors proxy - insert response into all headers to allow for cors
 // !!!!!! SWITCHED to cors as delete would fail on cors error
-// app.use((req, res, next) => {
-//     res.header('Access-Control-Allow-Origin', '*');
-//     next();
-//   });
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', '*');
+    next();
+  });
 
 app.get('/', (req, res)=>{
     res.status(200).json({

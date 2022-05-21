@@ -27,7 +27,7 @@ router.get("/:todo_id", async (req, res) => {
         const foundSimilarTodos = await todo_list.findOne({
             order: [ [ 'todo_id', 'ASC' ] ],
             where: {
-                todo_id: { [Op.like]: `%${req.query.todo_id ? req.query.todo_id : ''}%`  }
+                todo_id: req.query.todo_id 
             }
         })
         res.status(200).json(foundSimilarTodos)
