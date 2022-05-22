@@ -27,7 +27,7 @@ router.get("/:todo_id", async (req, res) => {
         const foundSimilarTodos = await todo_list.findOne({
             order: [ [ 'todo_id', 'ASC' ] ],
             where: {
-                todo_id: req.query.todo_id 
+                todo_id: req.params.todo_id 
             }
         })
         res.status(200).json(foundSimilarTodos)
@@ -50,14 +50,18 @@ router.post("/", async (req, res) => {
         res.status(500).json(err)
     }
 })
-//Update Todo
+//Update Todo  
 router.put("/:todo_id", async (req, res) => {
     try{
+        
+        let todo = req.body 
         const updateTodo = await todo_list.update(req.body, {
             where: { 
                 todo_id: req.params.todo_id
             }
         })
+  
+        await todo.save();
         res.status(200).json(`Succefully updated ${updateTodo} todos`)
 
     } catch (err) { 
