@@ -61,7 +61,7 @@ router.put("/:todo_id", async (req, res) => {
             }
         })
   
-        await todo.save();
+        
         res.status(200).json(`Succefully updated ${updateTodo} todos`)
 
     } catch (err) { 
