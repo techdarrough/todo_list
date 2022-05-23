@@ -3,14 +3,14 @@
     "username": "postgres",
     "password": "Z4gXOucGo30PpbQc1yno",
     "database": "d330sar3d5saef",
-    "host": "unlv-mp2-todo-app-db.clxmy9mz4u9a.us-west-2.rds.amazonaws.com",
+    "host": "ec2-52-3-2-245.compute-1.amazonaws.com",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "Z4gXOucGo30PpbQc1yno",
     "database": "d330sar3d5saef",
-    "host": "unlv-mp2-todo-app-db.clxmy9mz4u9a.us-west-2.rds.amazonaws.com",
+    "host": "ec2-52-3-2-245.compute-1.amazonaws.com",
     "dialect": "postgres"
     
   },
@@ -18,7 +18,7 @@
     "username": "postgres",
     "password": "Z4gXOucGo30PpbQc1yno",
     "database": "d330sar3d5saef",
-    "host": "unlv-mp2-todo-app-db.clxmy9mz4u9a.us-west-2.rds.amazonaws.com",
+    "host": "ec2-52-3-2-245.compute-1.amazonaws.com",
     "dialect": "postgres"
  
     
