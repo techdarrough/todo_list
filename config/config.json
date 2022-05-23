@@ -1,29 +1,26 @@
 {
   "development": {
-    "username": "itbaoakjezorcq",
-    "password": "dfe96ca73383cc52d841e8e376bd4bf79a9a80135eba4e8e404abb02873e1b97",
+    "username": "postgres",
+    "password": "Z4gXOucGo30PpbQc1yno",
     "database": "d330sar3d5saef",
-    "host": "ec2-52-3-2-245.compute-1.amazonaws.com",
+    "host": "unlv-mp2-todo-app-db.clxmy9mz4u9a.us-west-2.rds.amazonaws.com",
     "dialect": "postgres"
   },
   "test": {
-    "username": "itbaoakjezorcq",
-    "password": "dfe96ca73383cc52d841e8e376bd4bf79a9a80135eba4e8e404abb02873e1b97",
+    "username": "postgres",
+    "password": "Z4gXOucGo30PpbQc1yno",
     "database": "d330sar3d5saef",
-    "host": "ec2-52-3-2-245.compute-1.amazonaws.com",
+    "host": "unlv-mp2-todo-app-db.clxmy9mz4u9a.us-west-2.rds.amazonaws.com",
     "dialect": "postgres"
     
   },
   "production": {
-    "username": "itbaoakjezorcq",
-    "password": "dfe96ca73383cc52d841e8e376bd4bf79a9a80135eba4e8e404abb02873e1b97",
+    "username": "postgres",
+    "password": "Z4gXOucGo30PpbQc1yno",
     "database": "d330sar3d5saef",
-    "host": "ec2-52-3-2-245.compute-1.amazonaws.com",
-    "dialect": "postgres",
-    "ssl": {
-      "require": true,
-      "rejectUnauthorized": false
-  }
+    "host": "unlv-mp2-todo-app-db.clxmy9mz4u9a.us-west-2.rds.amazonaws.com",
+    "dialect": "postgres"
+ 
     
   }
 }
