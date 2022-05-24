@@ -2,14 +2,14 @@
   "development": {
     "username": "postgres",
     "password": "Z4gXOucGo30PpbQc1yno",
-    "database": "d330sar3d5saef",
+    "database": "unlv-mp2-todo-app-db",
     "host": "ec2-52-3-2-245.compute-1.amazonaws.com",
     "dialect": "postgres"
   },
   "test": {
     "username": "postgres",
     "password": "Z4gXOucGo30PpbQc1yno",
-    "database": "d330sar3d5saef",
+    "database": "unlv-mp2-todo-app-db",
     "host": "ec2-52-3-2-245.compute-1.amazonaws.com",
     "dialect": "postgres"
     
@@ -17,9 +17,10 @@
   "production": {
     "username": "postgres",
     "password": "Z4gXOucGo30PpbQc1yno",
-    "database": "d330sar3d5saef",
+    "database": "unlv-mp2-todo-app-db",
     "host": "ec2-52-3-2-245.compute-1.amazonaws.com",
     "dialect": "postgres"
+ 
  
     
   }
