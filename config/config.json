@@ -19,7 +19,11 @@
     "password": "Z4gXOucGo30PpbQc1yno",
     "database": "unlv-mp2-todo-app-db",
     "host": "ec2-52-3-2-245.compute-1.amazonaws.com",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "ssl": {
+      "require": true,
+      "rejectUnauthorized": false
+  }
  
  
     
