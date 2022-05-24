@@ -23,6 +23,7 @@
     "dialectOptions": {
       "ssl": {
         "require": true,
+        "ca": "../certs/rds-combined-ca-bundle.pem",
         "rejectUnauthorized": false
       }
     }
